@@ -106,9 +106,9 @@ def create_image_dataloader(data_folder, batch_size=32, transform=None):
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
-    parser.add_argument("--test_path", help="path_to_test_dataset", default="C:/Users/Orca-Epyc7B13/Desktop/Test/test_images")
+    parser.add_argument("--test_path", help="path_to_test_dataset", default="test_images")
     parser.add_argument("--model_path", help="saved_model_path", default='ugly_model.pth')
-    parser.add_argument("--output_path", help="output_excel_path", default='C:/Users/Orca-Epyc7B13/Desktop/Test/predictions_results_test_sample.xlsx')
+    parser.add_argument("--output_path", help="output_excel_path", default='predictions_results_test_sample.xlsx')
     args = parser.parse_args()
 
     print(f"Loading image data...")
